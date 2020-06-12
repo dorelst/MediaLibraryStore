@@ -1,0 +1,49 @@
+INSERT INTO user_group (value) VALUES
+('student'),
+('teacher'),
+('manager');
+
+INSERT INTO item_type (value) VALUES
+('book'),
+('audio book'),
+('dvd');
+
+INSERT INTO user (group_id, first_name, last_name, username, password) VALUES
+(1, 'Jill', 'Johnson', 'jill-johnson', 'jillpassword'),
+(1, 'Mark', 'Reed', 'mark-reed', 'markpassword'),
+(1, 'Anna', 'Thompson', 'anna-tomphson', 'anapassword'),
+(2, 'Lucy', 'Young', 'lucy-young', 'lucypassword'),
+(2, 'Ben', 'Dawn', 'ben-dawn', 'benpassword'),
+(3, 'Karla', 'Lee', 'karla-lee', 'karlapassword');
+
+INSERT INTO media_item (item_type_id, title, author_first_name, author_last_name, released_year) VALUES
+(1, "Charlotte's Web", 'E.B.', 'White', 1952),
+(1, 'JJunie B. Jones and the Stupid Smelly Bus', 'Barbara', 'Park', 1992),
+(1, 'The Cat in the Hat', 'Theodor', 'Geisel', 1957),
+(1, 'The Call of the Wild', 'Jack', 'London', 1903),
+(2, "Charlotte's Web", 'E.B.', 'White', 1952),
+(2, 'JJunie B. Jones and the Stupid Smelly Bus', 'Barbara', 'Park', 1992),
+(2, 'The Call of the Wild', 'Jack', 'London', 1903),
+(3, 'Frozen', null, null, 2013),
+(3, 'Shrek', null, null, 2001);
+
+INSERT INTO classroom (classroom_name) VALUES
+('Lucy's Classroom');
+
+INSERT INTO classroom_member (classroom_id, user_id) VALUES
+(1, 4),
+(1, 1),
+(1, 2);
+
+INSERT INTO booked_item (media_item_id, user_id, currently_booked) VALUES
+(1, 1, false),
+(3, 1, true),
+(8, 2, true),
+(2, 2, true),
+(6, 3, false),
+(4, 3, true),
+(9, 3, true);
+
+
+
+

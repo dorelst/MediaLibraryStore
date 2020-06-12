@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Virtual Media Library Store</title>
+    <script src="./assets/media-library-store.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/media-library-store.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<div class="title">
+				<h2>Media Library Store</h2>
+			</div>
+			<div class="navbar-section">
+				<div class="first-row-buttons">
+					<button class="abutton" onclick="loadUsers()">Load Users</button>
+					<button class="abutton" onclick="loadUser()">Load User ID :</button>
+					<input class="an-input" type="text" id="userId" name="userId" size="1">
+					<button class="abutton" onclick="loadUsersCurrentlyBooking()">Users Currently Booking</button>
+					<button class="abutton" onclick="loadClassrooms()">Classrooms</button>
+					<button class="abutton" onclick="loadClassroomMembers()">Members of Classroom ID :</button>
+					<input class="an-input" type="text" id="classroomId" name="classroomId" size="1">
+					<button class="abutton" onclick="createAddUserForm()">Add User</button>
+				</div>
+				<div class="second-row-buttons">
+					<button class="abutton" onclick="loadMediaItems()">Media Items</button>
+					<button class="abutton" onclick="loadMediaItemsPerType()">Media Items Per Type: </button>
+					<input class="an-input" type="text" id="itemType" name="itemType" size="1">
+					<button class="abutton" onclick="loadMediaItemsCurrentlyBooked()">Media Items Currently Booked</button>
+					<button class="abutton" onclick="loadMediaItemsPreviouslyBooked()">Media Items Previously Booked</button>
+					<button class="abutton" onclick="createAddMediaItemForm()">Add Media Item</button>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<hr>
+			<div class="display-content" id="mediaLibraryStore">
+	    		<h3>Media Items Store Content</h3>
+	    	</div>
+		</div>
+	</div>
+</body>
+</html>

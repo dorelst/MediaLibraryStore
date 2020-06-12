@@ -1,0 +1,102 @@
+INSERT INTO user_group (id, value) VALUES (1, 'student');
+INSERT INTO user_group (id, value) VALUES (2, 'teacher');
+INSERT INTO user_group (id, value) VALUES (3, 'manager');
+
+INSERT INTO item_type (id, value) VALUES (1, 'book');
+INSERT INTO item_type (id, value) VALUES (2, 'audio book');
+INSERT INTO item_type (id, value) VALUES (3, 'dvd');
+
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(1, 1, 'Jill', 'Johnson', 'jill-johnson', 'jillpassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(2, 1, 'Mark', 'Reed', 'mark-reed', 'markpassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(3, 1, 'Anna', 'Thompson', 'anna-tomphson', 'anapassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(4, 2, 'Lucy', 'Young', 'lucy-young', 'lucypassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(5, 2, 'Ben', 'Dawn', 'ben-dawn', 'benpassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(6, 3, 'Karla', 'Lee', 'karla-lee', 'karlapassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(7, 1, 'Matt', 'Logan', 'matt-logan', 'mattpassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(8, 1, 'Carolyn', 'Black', 'carolyn-black', 'carolynpassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(9, 1, 'Jane', 'Whiteson', 'jane-whiteson', 'janepassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(10, 1, 'Larissa', 'McAlister', 'larissa-mcalister', 'larissapassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(11, 2, 'Scott', 'Martens', 'scott-martens', 'scottpassword');
+INSERT INTO users (id, group_id, first_name, last_name, username, password) VALUES 
+(12, 3, 'Pat', 'Smith', 'pat-smith', 'patpassword');
+
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES (1, 1, 'Charlotte's Web', 'E.B.', 'White', 1952);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(2, 1, 'JJunie B. Jones and the Stupid Smelly Bus', 'Barbara', 'Park', 1992);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(3, 1, 'The Cat in the Hat', 'Theodor', 'Geisel', 1957);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(4, 1, 'The Call of the Wild', 'Jack', 'London', 1903);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(5, 2, 'Charlotte''s Web', 'E.B.', 'White', 1952);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(6, 2, 'JJunie B. Jones and the Stupid Smelly Bus', 'Barbara', 'Park', 1992);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(7, 2, 'The Call of the Wild', 'Jack', 'London', 1903);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(8, 3, 'Frozen', null, null, 2013);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(9, 3, 'Shrek', null, null, 2001);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(10, 1, 'Dune', 'Frank', 'Herbet', 1965);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(11, 1, 'Twenty Thousand Leagues Under the Sea', 'Jules', 'Verne', 1870);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(12, 1, 'The Three Musketeers', 'Alexander', 'Dumas', 1844);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(13, 1, 'The Adventures of Tom Sawyer', 'Mark', 'Twain', 1876);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(14, 2, 'The Adventures of Tom Sawyer', 'Mark', 'Twain', 1876);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(15, 2, 'Where the Wild Things Are', 'Maurice', 'Sendak', 1963);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(16, 2, 'The Adventures of Huckleberry Finn', 'Mark', 'Twain', 1884);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(17, 3, 'Finding Nemo', null, null, 2003);
+INSERT INTO media_item (id, item_type_id, title, author_first_name, author_last_name, released_year) VALUES 
+(18, 3, 'Monsters, Inc.', null, null, 2001);
+
+INSERT INTO classroom (id, classroom_name) VALUES (1, 'Lucy''s Classroom');
+INSERT INTO classroom (id, classroom_name) VALUES (2, 'Scott''s Classroom');
+
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (1, 4);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (1, 1);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (1, 2);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (2, 11);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (2, 7);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (2, 8);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (2, 3);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (2, 12);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (1, 9);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (1, 10);
+INSERT INTO classroom_member (classroom_id, user_id) VALUES (1, 12);
+
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (1, 1, 1, 0);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (2, 3, 1, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (3, 8, 2, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (4, 2, 2, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (5, 6, 3, 0);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (6, 4, 3, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (7, 9, 3, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (8, 1, 7, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (9, 10, 7, 0);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (10, 13, 8, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (11, 16, 8, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (12, 11, 9, 0);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (13, 12, 9, 1);
+INSERT INTO booked_item (id, media_item_id, user_id, currently_booked) VALUES (14, 15, 10, 1);
+
+
+
+
